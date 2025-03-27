@@ -25,6 +25,7 @@ class Shipment(ShipmentCreate):
     status: str = "pending"
 
 shipments = []
+#Endpoints
 
 @app.post("/shipments", response_model=Shipment)
 async def create_shipment(shipment: ShipmentCreate):
